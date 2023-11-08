@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1699410292 source:/home/mae/Downloads/Yahoo!/C++/Store/src/Store.cpp
+	<iostream>
+	"Store.h"
+
+1699412177 /home/mae/Downloads/Yahoo!/C++/Store/include/Store.h
+
+1699409511 source:/home/mae/Downloads/Yahoo!/C++/Store/main.cpp
+	<iostream>
+	"Store.h"
+
