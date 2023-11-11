@@ -1,7 +1,7 @@
 #include "operations.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
 void start(){
     printf("Calculator of what....maybe");
     printf("\n\nAh, Mathematical operations");
