@@ -2,7 +2,7 @@
 #define OPERATIONS_H_INCLUDED
 
 void start();
-void switc_o(int x,int y);
+void switch_o(int x,int y);
 void options(int* x, int* y);
 void plus_o(int x,int y);
 void minus_o(int x,int y);
