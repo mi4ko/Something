@@ -132,11 +132,13 @@ void by_o(int x, int y){
 
 }
 void power_o(int x, int y){
-     int z=pow((x,y));
+     int z=pow((y,x));
      printf("\nAfter some seconds calculating the result is %d.\n",z);
 }
 void root_o(int x, int y){
-     float z=sqrt(x,y);
+     #how sqrt^x(y) equals y^(1/x) then, i'm try this......
+     float w=(1/x);
+     float z=(pow(w,y));
      printf("\nAfter some seconds calculating the result is %.2f.\n",z);
 }
 
