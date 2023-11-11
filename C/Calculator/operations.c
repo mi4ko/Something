@@ -72,7 +72,7 @@ void switch_o(int op,int condition){
         x=y=0;
     }
     else{
-       
+       //to future
         switch(op){
             case 1:
 
@@ -132,12 +132,12 @@ void by_o(int x, int y){
 
 }
 void power_o(int x, int y){
-     int z=pow(x,y);
+     int z=pow((x,y));
      printf("\nAfter some seconds calculating the result is %d.\n",z);
 }
 void root_o(int x, int y){
      float z=sqrt(x,y);
-     printf("\nAfter some seconds calculating the result is %0.2f.\n",z);
+     printf("\nAfter some seconds calculating the result is %.2f.\n",z);
 }
 
 
