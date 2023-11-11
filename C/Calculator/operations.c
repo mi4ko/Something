@@ -17,7 +17,7 @@ void start(){
         printf("5) Let's try to do X the power of Y?\n");
         printf("6) Let's try to do Xth root Y?\n\n");
         printf("0) Do you want go ahead?\n");
-        scanf("%d",op);
+        scanf("%d",&op);
         int condition=1;
         switch_o(op,condition);
     }while(op!=0);
@@ -106,9 +106,9 @@ void switch_o(int op,int condition){
 
 void options(int *x, int *y){
     printf("\nPlease insert a value to X:===========");
-    scanf("%d",*x);
+    scanf("%d",&*x);
     printf("\nNow, Please choice a value to Y:======");
-    scanf("%d",*y);
+    scanf("%d",&*y);
 }
 void plus_o(int x,int y){
     int z=x+y;
@@ -132,7 +132,7 @@ void by_o(int x, int y){
 
 }
 void power_o(int x, int y){
-     int z=pow((y,x));
+     int z=(pow(y,x));
      printf("\nAfter some seconds calculating the result is %d.\n",z);
 }
 void root_o(int x, int y){
