@@ -112,26 +112,26 @@ void options(int *x, int *y){
 }
 void plus_o(int x,int y){
     int z=x+y;
-    printf("\nAfter some seconds calculating the result is %d.\n",z);
+    printf("\nAfter a few seconds calculating the result is %d.\n",z);
 
 }
 void minus_o(int x,int y){
     int z=x-y;
-    printf("\nAfter some seconds calculating the result is %d.\n",z);
+    printf("\nAfter a few seconds calculating the result is %d.\n",z);
 }
 void times_o(int x, int y){
     int z=x*y;
-    printf("\nAfter some seconds calculating the result is %d.\n",z);
+    printf("\nAfter a few seconds calculating the result is %d.\n",z);
 
 
 }
 void by_o(int x, int y){
     if(y==0){
-        printf("Oh, my dear user, unfortunately, you set 0 to Y.");
-        printf("Therefore, I don't know the result.");
+        printf("\nOh, my dear user, unfortunately, you set 0 to Y.");
+        printf("\nTherefore, I don't know the result.\n");
     }else{
         float z=(float)x/y;
-        printf("\nAfter some seconds calculating the result is %.2f.\n",z);
+        printf("\nAfter a few seconds calculating the result is %.2f.\n",z);
     }
 
 }
@@ -140,15 +140,15 @@ void power_o(int x, int y){
      //I found an error in my library, 
      //but I'll still be trying, maybe I'll create my own library
      //z=pow(y,x);
-     printf("\nAfter some seconds calculating the result is %d.\n",z);
+     printf("\nAfter a few seconds calculating the result is %d.\n",z);
 }
 void root_o(int x, int y){
      //how sqrt^x(y) equals y^(1/x) then, i'm try this......
-     float z=(float)1/x;
+     float w=(float)1/x;
      //I found an error in my library, 
      //but I'll still be trying, maybe I'll create my own library
      //float z=(float)pow(w,y);
-     printf("\nAfter some seconds calculating the result is %.2f.\n",z);
+     printf("\nAfter a few seconds calculating the result is %.2f.\n",w);
 }
 
 
