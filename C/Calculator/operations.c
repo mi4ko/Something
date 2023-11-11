@@ -22,36 +22,44 @@ void start(){
         switch_o(op,condition);
     }while(op!=0);
 }
+void input_o(){
+//Error handling input 
+    
+}
 void switch_o(int op,int condition){
 
     if(condition==1){
         int x=0,y=0;
         switch(op){
             case 1:
-                printf("Addition");
-
+                printf("\nAddition\n");
                 options(&x,&y);
-
+                plus_o(x,y);
                 break;
             case 2:
-                printf("Subtraction");
-
+                printf("\nSubtraction\n");
+                options(&x,&y);
+                minus_o(x,y);
                 break;
             case 3:
-                printf("Multiplication");
-
+                printf("\nMultiplication\n");
+                options(&x,&y);
+                times_o(x,y);
                 break;
             case 4:
-                printf("Division");
-
+                printf("\nDivision\n");
+                options(&x,&y);
+                by_o(x,y);
                 break;
             case 5:
-                printf("Power");
-
+                printf("\nPower\n");
+                options(&x,&y);
+                power_o(x,y);
                 break;
             case 6:
-                printf("Root");
-
+                printf("n\Root\n");
+                options(&x,&y);
+                root_o(x,y);
                 break;
             case 0:
                 printf("\nSee you next time, dear user.\n");
@@ -59,11 +67,12 @@ void switch_o(int op,int condition){
                 break;
             default:
                 printf("\nSorry, maybe you insert incorrect key.....");
-                printf("\Let's try again, Please.....");
+                printf("\nLet's try again, Please.....");
         }
         x=y=0;
     }
-    else if(condition==2){
+    else{
+       
         switch(op){
             case 1:
 
@@ -88,49 +97,47 @@ void switch_o(int op,int condition){
                 break;
             default:
                 printf("\nSorry, maybe you insert incorrect key.....");
-                printf("\Let's try again, Please.....");
+                printf("\nLet's try again, Please.....\n");
         }
 
     }
 
 }
 
-void options(int* x, int* y){
+void options(int *x, int *y){
     printf("\nPlease insert a value to X:===========");
-    scanf("%d",&x);
+    scanf("%d",*x);
     printf("\nNow, Please choice a value to Y:======");
-    scanf("%d",&y);
+    scanf("%d",*y);
 }
 void plus_o(int x,int y){
-
+    int z=x+y;
+    printf("\nAfter some seconds calculating the result is %d.\n",z);
 
 }
 void minus_o(int x,int y){
-
-
-
+    int z=x-y;
+    printf("\nAfter some seconds calculating the result is %d.\n",z);
 }
 void times_o(int x, int y){
-
+    int z=x*y;
+    printf("\nAfter some seconds calculating the result is %d.\n",z);
 
 
 }
 void by_o(int x, int y){
-
+    int z=x/y;
+    printf("\nAfter some seconds calculating the result is %d.\n",z);
 
 
 }
 void power_o(int x, int y){
-
-
-
+     int z=pow(x,y);
+     printf("\nAfter some seconds calculating the result is %d.\n",z);
 }
-void root(int x, int y){
-
-
-
-
-
+void root_o(int x, int y){
+     float z=sqrt(x,y);
+     printf("\nAfter some seconds calculating the result is %0.2f.\n",z);
 }
 
 
