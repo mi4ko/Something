@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1699675071 source:/home/mae/Downloads/Yahoo!/C/Calculator/main.c
+	<stdio.h>
+	<stdlib.h>
+	"operations.h"
+
+1699676810 /home/mae/Downloads/Yahoo!/C/Calculator/operations.h
+
+1699676684 source:/home/mae/Downloads/Yahoo!/C/Calculator/operations.c
+	"operations.h"
+	<stdio.h>
+	<stdlib.h>
+
