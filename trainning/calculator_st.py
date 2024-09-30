@@ -13,7 +13,7 @@ def special_thanks():
 	st.write("for developing the logic and base code for this training,")
 	st.write("as I was studying and found your posts, which helped me a lot.")
 	st.write("")
-	st.write("    Michiko Shindou")
+	st.write("    Michiko Shindou/Gabriel Cassino")
 	st.write("")
 	st.write("Links:")
 	st.write("")
